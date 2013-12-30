@@ -1,0 +1,11 @@
+---
+# Version of OpenMRS to deploy
+omrs_version: 1.9.7
+# Set mysql root password
+mysqlrootpwd: password
+# Set mysql username for openmrs
+mysqluser: openmrs-shr_user
+# Password for mysqluser
+mysqlomrspwd: password
+# Name of database
+db_name: openmrs-shr

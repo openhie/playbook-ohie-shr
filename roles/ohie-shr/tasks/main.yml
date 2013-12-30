@@ -1,0 +1,13 @@
+---
+- name: Copy SHR test db to /tmp
+  copy: src=shr_sandbox_demo.sql dest=/tmp/
+
+- name: Import SHR test db
+  mysql_db: name={{ db_name }} login_user={{ mysqluser }} login_password={{ mysqlomrspwd }} state=import target=/tmp/shr_sandbox_demo.sql
+  notify: restart tomcat7
+
+- name: Install SHR Modules
+  copy: src={{ item }} dest=/usr/share/tomcat7/.OpenMRS/modules/ owner=tomcat7 group=tomcat7
+  with_fileglob:
+    - modules/*.omod
+  notify: restart tomcat7

@@ -1,0 +1,13 @@
+---
+- name: Setup server
+  hosts: servers
+  user: root
+#  sudo: true
+
+  roles:
+#    - bootstrap
+    - java
+    - tomcat
+    - mysql
+    - openmrs
+    - ohie-shr
