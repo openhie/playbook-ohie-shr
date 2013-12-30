@@ -1,7 +1,7 @@
 playbook-ohie-shr
 ======================
 
-Ansible playbook for deploying the shared health record compenent of the [OpenHIE](http://ohie.org) stack
+Ansible playbook for deploying the shared health record compenent of the [OpenHIE](http://ohie.org) stack.
 
 ## What it does
 * Installs Openjdk-jre-7, tomcat7, mysql-server, openmrs, and required SHR modules.
