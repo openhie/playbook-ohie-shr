@@ -1,7 +1,7 @@
 playbook-ohie-shr
 ======================
 
-Ansible playbook for deploying the shared health record compenent of the [OpenHIE](http://ohie.org) stack.
+Ansible playbook for deploying the shared health record component of the [OpenHIE](http://ohie.org) stack.
 
 ## What it does
 * Installs Openjdk-jre-7, tomcat7, mysql-server, openmrs, and required SHR modules.
@@ -10,7 +10,7 @@ Ansible playbook for deploying the shared health record compenent of the [OpenHI
 * Ansible **1.3+** installed on client.
 * Debian based distro installed on target machine (tested with Ubuntu 12.04 LTS).
 * root username/password on target machine, ssh installed and running.
-* **If you do not having the required python packages uncommnet the `# - bootstrap` line in the `site.yml` file.**
+* **If you do not having the required python packages uncomment the `# - bootstrap` line in the `site.yml` file.**
 
 ## Vars and setup
 You will need to copy `group_vars/all.example` to `group_vars/all` then edit the variables in`group_vars/all`.
